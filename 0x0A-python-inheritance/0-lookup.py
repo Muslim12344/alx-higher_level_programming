@@ -1,7 +1,15 @@
 #!/usr/bin/python3
-"""Defines an object attribute lookup function."""
+""" 0x0A. Python - Inheritance, task 0 """
 
 
 def lookup(obj):
-    """Return a list of an object's available attributes."""
-    return (dir(obj))
+    """Returns the list of available attributes and methods of an object.
+
+    Args:
+        obj (any): object of any type
+
+    Returns:
+        list of available attributes and methods
+
+    """
+    return dir(obj)

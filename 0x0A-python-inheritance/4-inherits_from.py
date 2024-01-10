@@ -1,17 +1,20 @@
 #!/usr/bin/python3
-"""Defines a class and inherited class-checking function."""
+""" 0x0A. Python - Inheritance, task 4 """
 
 
-def is_kind_of_class(obj, a_class):
-    """Check if an object is an instance or inherited instance of a class.
+def inherits_from(obj, a_class):
+    """Tests if an object is an instance of a class inherited from
+    the specified class, directly or indirectly.
 
     Args:
-        obj (any): The object to check.
-        a_class (type): The class to match the type of obj to.
+        obj (any): object of any type
+        a_class (class): class to test against
+
     Returns:
-        If obj is an instance or inherited instance of a_class - True.
-        Otherwise - False.
+        True if obj is an instance of a subclass of a_class,
+            False otherwise.
+
     """
-    if isinstance(obj, a_class):
-        return True
-    return False
+    if type(obj) == a_class:
+        return (False)
+    return (issubclass(type(obj), a_class))

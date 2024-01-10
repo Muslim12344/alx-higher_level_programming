@@ -1,10 +1,11 @@
 #!/usr/bin/python3
-"""Defines a base geometry class BaseGeometry."""
+""" 0x0A. Python - Inheritance, task 6 """
 
 
 class BaseGeometry:
-    """Represent base geometry."""
-
+    """Intentionally empty area() method """
+  
     def area(self):
-        """Not implemented."""
-        raise Exception("area() is not implemented yet")
+        """Unimplemented, only raises exception to notify user """
+
+        raise Exception('area() is not implemented')
